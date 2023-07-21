@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Kampus Merdeka</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+
+            <div class="logo" id="logo-navbar">
+                <img src="assets/img/kampus.png" alt="Logo Kampus Merdeka" class="img-logo">
+                <h1>
+                    KAMPUS <br> 
+                    MERDEKA
+                <hi/>
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <form action="">  
+                        <div class="search-wrapper">
+                            <img src="assets/img/svg/search.svg" alt="svg-search" class="svg-search">
+                            <input type="text" name="" class="input-search" id="inputNavbar" onkeydown="handleKeyDown(event, 'inputNavbar')" placeholder="Search">
+                        </div>
+                    </form>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <img src="assets/img/svg/blob2.svg" alt="" srcset="" class="blob-svg blob-md">
+        <img src="assets/img/svg/blob3.svg" alt="" srcset="" class="blob-svg blob-xl">
+
+
+        <!-- Home -->
+        <section class="section home" id="home">
+            <div class="container">
+                <section class="content-section">
+                    <h1 class="title">
+                        Ambil Kembali Masa Depanmu
+                    </h1>
+                    <p class="paragraph">
+                        Dengan Mengikuti Program Kampus Medeka
+                    </p>  
+                    <div class="btn-container">
+                        <button class="btn"><a href="#program">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                        <button class="btn-play" onclick="openYoutubeProgramUnggulanPopup()">
+                            <a href="#">
+                                <span class="play-video">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M7 6v12l10-6z"></path></svg>
+                                </span>
+                                Play Video
+                            </a>
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/merdeka.jpg" alt="" srcset="" class="main-img">
+                        <img src="assets/img/svg/youtube.svg" alt="" class="svg svg-yt"  onclick="openYoutubePopup()">
+                        <img src="assets/img/svg/instagram.svg" alt="" class="svg svg-ig"  onclick="openInstagramPopup()">
+                        <img src="assets/img/svg/web.svg" alt="" class="svg svg-web" onclick="openWebPopup()">
+                        <img src="assets/img/svg/arrow.svg" alt="" class="svg svg-arrow-yt">
+                        <img src="assets/img/svg/arrow.svg" alt="" class="svg svg-arrow-ig">
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section class="section about" id="about">
+            <div class="container">
+                <section class="content-section">
+                    <h1 class="title">
+                        Kampus <br>
+                        Merdeka
+                    </h1>
+                    <p class="paragraph">
+                        Program persiapan karier yang komprehensif untuk mempersiapkan generasi terbaik Indonesia
+                        <br><br>
+                        Kampus Merdeka adalah bagian dari kebijakan Merdeka Belajar oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) yang memberikan seluruh mahasiswa kesempatan untuk mengasah kemampuan sesuai bakat dan minat dengan terjun langsung ke dunia kerja sebagai langkah persiapan karier.
+                    </p>
+                </section>
+                <section class="img-section">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VRppF5hUqu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Program Swiper-->
+        <section class="section program" id="program">
+            <div class="container main-program">
+
+                <section class="content-section program-section">
+                    <div class="mobile-frame">
+                        <div class="mobile-screen">
+                            <h2>Program Kampus Merdeka</h2>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Kampus Mengajar</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/kampus_mengajar.jpeg" alt="Kampus Mengajar" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn">
+                                                    <a href="#kampusMengajar" class="">Telusuri</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Magang Bersertifikat</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/magang.jpg" alt="Magang Bersertifikat" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#magang" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Pertukaran Mahasiswa Merdeka</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/pertukaran.jpeg" alt="Pertukaran Mahasiswa Merdeka" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#pertukaran" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Tingkatkan Skill Wirausaha bersama Wirausaha Merdeka
+                                            </h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/wirausaha.jpeg" alt="Tingkatkan Skill Wirausaha bersama Wirausaha Merdeka " srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#wirausaha" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Studi Independen</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/independent.jpg" alt="Studi Independen" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#independent" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Syarat dan Ketentuan</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/iisma.jpg" alt="Syarat dan Ketentuan" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#syarat" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Praktisi Mengajar Angkatan 2 Telah Dibuka</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/mengajar.jpeg" alt="Praktisi Mengajar Angkatan 2 Telah Dibuka" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#mengajar" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Bangkit by Google, GoTo, and Traveloka</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/bangkit.jpg" alt="Bangkit" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#bangkit" class="">Telusuri</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                            <h2 class="subtitle">Kementerian ESDM - GERILYA</h2>
+                                            <div class="img-program-container">
+                                                <img src="assets/img/esdm.jpg" alt="Kementerian ESDM - GERILYA" srcset="" class="main-img">
+                                            </div>
+                                            <div class="button-container">
+                                                <button class="btn"><a href="#merdeka" class="">Telusuri</a><img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="img-section img-section-program">
+                    <div class="img-container">
+                        <img src="assets/img/magang.jpg" alt="" class="main-img">
+                    </div>
+                </section>
+
+            </div>
+        </section>
+        
+        <!-- Program -->
+        <section class="section program" id="kampusMengajar">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Kampus Mengajar
+                    </h1>
+                    <p class="paragraph">
+                        Kampus Mengajar merupakan kanal pembelajaran yang memberikan kesempatan kepada mahasiswa untuk belajar di luar kampus selama satu semester guna melatih kemampuan menyelesaikan permasalahan yang kompleks dengan menjadi mitra guru untuk berinovasi dalam pembelajaran, pengembangan strategi, dan model pembelajaran yang kreatif, inovatif, dan menyenangkan.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Telusuri</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/kampus_mengajar.jpeg" alt="Kampus Mengajar" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <section class="section program" id="magang">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Magang Bersertifikat
+                    </h1>
+                    <p class="paragraph">
+                        Sambut karier masa depan dengan pengalaman kerja yang berharga.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Telusuri</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/magang.jpg" alt="Magang Bersertifikat" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="pertukaran">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Pertukaran Mahasiswa Merdeka
+                    </h1>
+                    <p class="paragraph">
+                        Bertukar sementara, bermakna selamanya Daftar PT Penerimaan PMM3
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Daftar PT Penerimaan PMM3</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/pertukaran.jpeg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="wirausaha">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Tingkatkan Skill Wirausaha bersama Wirausaha Merdeka
+                    </h1>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Daftar Sekarang</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/wirausaha.jpeg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="independent">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Studi Independen
+                    </h1>
+                    <p class="paragraph">
+                        Kuasai ilmu aplikatif lintas jurusan dari para ahli di bidangnya.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Telusuri</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/independent.jpg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="syarat">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Syarat dan Ketentuan
+                    </h1>
+                    <p class="paragraph">
+                        Pastikan seluruh dokumen telah siap agar proses pendaftaranmu lancar
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Informasi Selengkapnya</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/iisma.jpg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="mengajar">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Praktisi Mengajar Angkatan 2 Telah Dibuka
+                    </h1>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Website Praktisi Mengajar 2023</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/mengajar.jpeg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="bangkit">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Bangkit by Google, GoTo, and Traveloka
+                    </h1>
+                    <p class="paragraph">
+                        Program kesiapan karier spesifik dengan 3 pilihan program, yaitu Machine Learning, Mobile Development, dan Cloud Computing
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Telusuri</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/bangkit.jpg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section program" id="merdeka">
+            <div class="container main-program">
+                <section class="content-section">
+                    <h1 class="title">
+                        Kementerian ESDM - GERILYA
+                    </h1>
+                    <p class="paragraph">
+                        Kembangkan kompetensi di bidang energi bersih dan terbarukan melalui program Studi Independen yang diinisiasi oleh Kementrian Energi dan Sumber Daya Mineral.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://kampusmerdeka.kemdikbud.go.id/" class="">Telusuri</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                <section class="img-section">
+                    <div class="img-container">
+                        <img src="assets/img/esdm.jpg" alt="" srcset="" class="main-img">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        
+
+    </main>
+    <footer>
+        <!-- Contact -->
+        <section class="section about" id="contact">
+            <div class="container">
+                <section class="content-section contact-section">
+
+                    <h1 class="title">
+                        Hai Ada Yang Bisa Kami Bantu?
+                    </h1>
+
+                    <div>
+                        <form action="">  
+                            <div class="search-wrapper">
+                                <img src="assets/img/svg/search.svg" alt="svg-search" class="svg-search">
+                                <input type="text" name="" class="input-search" id="inputContact" onkeydown="handleKeyDown(event, 'inputContact')" placeholder="Cari Informasi Disini">
+                            </div>
+                        </form>
+                    </div>
+
+                    <p class="paragraph">
+                        Topik populer Logbook Linimasa Pendaftaran WMK    
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn">
+                            <a href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us/categories/6434114978969-Buku-Panduan-" class="">Buku Panduan</a>
+                            <img src="assets/img/svg/cursor.svg" alt="" srcset="" class="cursor-svg">
+                        </button>
+                    </div>
+                </section>
+                
+                <section class="img-section img-contact">
+                        <img src="assets/img/char.png" alt="" srcset="" class="img-char">
+                </section>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
+</body>
+</html>
