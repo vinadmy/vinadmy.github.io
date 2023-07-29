@@ -54,17 +54,17 @@ function handleKeyDown(event, inputId) {
   }
   
   function openInstagramPopup() {
-    window.open("https://www.instagram.com/kampusmerdeka.ri/", "Instagram Pop-up", "width=500,height=500");
+    window.open("https://www.instagram.com/ajibilhamsongket/", "Instagram Pop-up", "width=500,height=500");
   }
 
   function openYoutubePopup() {
-    window.open("https://www.youtube.com/@kampus.merdeka", "Youtube Pop-up", "width=500,height=500");
+    window.open("https://youtu.be/LY-gAK4iZNw", "Youtube Pop-up", "width=500,height=500");
   }
 
   function openWebPopup() {
-    window.open("https://kampusmerdeka.kemdikbud.go.id/", "Youtube Pop-up", "width=500,height=500");
+    window.open("https://p2k.stekom.ac.id/ensiklopedia/Songket_Palembang", "Youtube Pop-up", "width=500,height=500");
   }
 
   function openYoutubeProgramUnggulanPopup() {
-    window.open("https://www.youtube.com/watch?v=mtuardJqJBk", "Youtube Pop-up", "width=500,height=500");
+    window.open("https://youtu.be/vxmf2Nxxq3g", "Youtube Pop-up", "width=500,height=500");
   }

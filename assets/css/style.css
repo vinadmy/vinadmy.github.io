@@ -5,10 +5,10 @@
 :root {
   --font-size: 16px;
 
-  --primary-color: #6cd1e1;
+  --primary-color: #C60D0D;
   --body-color: #e6e5e1;
   --header-color: var(--body-color);
-  --title-color: #1b75bc;
+  --title-color: #C60D0D;
   --font-color: #000; /* hitam */
   --dark-color: #000; /* hitam */
 
@@ -22,14 +22,15 @@
   --button-height: 3rem;
   --button-weight: 2.4rem; 
   --button-radius: 2rem;
-  --button-hover: #51baca;
+  --button-hover: rgb(170, 33, 33);
+  --button-text-color: #fff;
 
   --search-radius: 1rem;
 
   /* Typograph  */
-  --title-font-size: 3rem; /* ukuran judul 3 x font-size */
+  --title-font-size: 2rem; /* ukuran judul 3 x font-size */
   --subtitle-font-weight: 400; 
-  --paragraph-font-size: 1.2rem; /* ukuran paragraph 1.2 x font-size */
+  --paragraph-font-size: 1rem; /* ukuran paragraph 1.2 x font-size */
 
   --width-container : 1024px; /* Lebar Container */
   --width-img-container: 25rem; /* Lebar foto content */
@@ -419,6 +420,7 @@ main {
 
 .btn a {
   padding: 1rem var(--button-weight);
+  color: var(--button-text-color);
 }
 
 .btn-play a {
@@ -456,6 +458,68 @@ main {
     justify-content: center;
     gap: 1.5rem;
     padding: 1.5rem 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.6rem;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  padding: 1.3rem;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+.product-category {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.buy-button:hover {
+  background-color: var(--button-hover);
 }
 
 @media (max-width: 575.98px) { 
