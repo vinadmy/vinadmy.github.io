@@ -1,14 +1,14 @@
 /* Import font dari google */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
 
 /* variabel */
 :root {
   --font-size: 16px;
 
-  --primary-color: #C60D0D;
+  --primary-color: #EA8888;
   --body-color: #e6e5e1;
   --header-color: var(--body-color);
-  --title-color: #C60D0D;
+  --title-color:#E04C4C;
   --font-color: #000; /* hitam */
   --dark-color: #000; /* hitam */
 
@@ -22,7 +22,7 @@
   --button-height: 3rem;
   --button-weight: 2.4rem; 
   --button-radius: 2rem;
-  --button-hover: rgb(170, 33, 33);
+  --button-hover: rgb(254, 228, 225);
   --button-text-color: #fff;
 
   --search-radius: 1rem;

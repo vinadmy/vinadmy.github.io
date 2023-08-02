@@ -7,7 +7,7 @@ const sr = ScrollReveal ({
 })
 
 sr.reveal('.content-section');
-sr.reveal('.product-card');
+sr.reveal('.product-card'{reset: false});
 sr.reveal('.img-section' , {origin: 'right'});
 
 sr.reveal('.svg-ig', {delay: 500})
